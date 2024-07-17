@@ -43,7 +43,6 @@ while True:
             if time.time() - detection_stopped_time >= SECONDS_TO_RECORD_AFTER_DETECTION:
                 detection = False
                 timer_started = False
-                out.release()
                 current_time = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
                 print(f"End {current_time}")
         else:
